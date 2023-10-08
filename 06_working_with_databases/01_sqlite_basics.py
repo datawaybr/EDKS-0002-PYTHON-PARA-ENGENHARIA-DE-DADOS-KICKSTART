@@ -18,8 +18,16 @@ conn.execute(
         VALUES (1, 'EMPRESA_X', 'BRAZIL', 20000.00 );
     """)
 
+conn.execute(
+    """
+        INSERT INTO EMPRESA (ID, NOME, ENDERECO, LIMITE_CREDITO)
+        VALUES (2, 'EMPRESA_Y', 'BRAZIL', 25000.00 );
+    """)
+
 cursor = conn.execute("SELECT id, nome, endereco, limite_credito from EMPRESA;")
 for row in cursor:
    print(f"row: {row}")
+
+conn.commit()
 
 conn.close()
