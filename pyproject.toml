@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-para-eng-de-dados-kickstart"
+version = "0.1.0"
+description = "Python para Engenharia de Dados - Kickstart"
+authors = ["Matheus Rossi <matheus_rossi@outlook.com>"]
+readme = "README.md"
+packages = [{include = "python_engenharia_de_dados"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+pyyaml = "^6.0"
+dicttoxml = "^1.7.16"
+requests = "^2.31.0"
+pandas = "^2.1.1"
+rocketry = "^2.5.1"
+psutil = "^5.9.5"
+pydantic = "1.10.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
