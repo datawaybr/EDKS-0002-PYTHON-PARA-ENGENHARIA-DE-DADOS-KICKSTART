@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('./databases/test.db')
+conn = sqlite3.connect('./databases/sqlite/test.db')
 
 conn.execute(
     """

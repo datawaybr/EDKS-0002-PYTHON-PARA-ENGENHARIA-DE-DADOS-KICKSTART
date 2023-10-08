@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-conn = sqlite3.connect('./databases/northwind.db')
+conn = sqlite3.connect('./databases/sqlite/northwind.db')
 
 print('\n------ BUSCAR TODAS AS TABELAS DA BASE SQLITE ------')
 

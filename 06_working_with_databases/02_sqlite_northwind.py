@@ -1,7 +1,7 @@
 import sqlite3
 from pprint import pprint
 
-conn = sqlite3.connect('./databases/northwind.db')
+conn = sqlite3.connect('./databases/sqlite/northwind.db')
 
 
 print('------ BUSCAR TODAS AS TABELAS DA BASE SQLITE ------')
