@@ -17,6 +17,10 @@ Vamos utilizar uma instalação do Postgres dentro de um container Docker.
 
 Vamos fazer o passo a passo aqui, mas caso tenha dúvidas de como usar o docker, sugerimos que revise a formação BS-0003 - DOCKER PARA TIMES DE DADOS - BASICS.
 
+Além do postgres, será necessário a instalação da biblioteca `psycopg2` para que o python consiga se conectar ao banco.
+
+[Documentação Oficial](https://www.psycopg.org/docs/)
+
 ## Bases de dados
 
 ### Northwind
