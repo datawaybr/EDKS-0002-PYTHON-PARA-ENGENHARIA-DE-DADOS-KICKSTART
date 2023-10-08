@@ -1,0 +1,5 @@
+lista_pcs:
+  - computador1:
+    tipo: pessoal
+  - computador2:
+    tipo: trabalho

@@ -20,6 +20,7 @@ Vamos fazer o passo a passo aqui, mas caso tenha dúvidas de como usar o docker,
 Além do postgres, será necessário a instalação da biblioteca `psycopg2` para que o python consiga se conectar ao banco.
 
 [Documentação Oficial](https://www.psycopg.org/docs/)
+[Pypi](https://pypi.org/project/psycopg2/)
 
 ## Bases de dados
 

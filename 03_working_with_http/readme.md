@@ -1,4 +1,4 @@
-# GoRest
+# Requisições HTTP
 
 [GoRest](https://gorest.co.in/) REST API online e gratuita para testes e prototipagem.
 

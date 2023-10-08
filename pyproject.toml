@@ -15,6 +15,7 @@ pandas = "^2.1.1"
 rocketry = "^2.5.1"
 psutil = "^5.9.5"
 pydantic = "1.10.10"
+pyarrow = "^13.0.0"
 
 
 [build-system]
