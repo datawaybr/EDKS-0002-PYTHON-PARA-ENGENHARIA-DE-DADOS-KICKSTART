@@ -28,3 +28,7 @@ print('------ CRIAR COLUNA COM A DATA HORA ATUAL ------')
 df['created_datetime'] = dt.now()
 df['created_date'] = dt.today().strftime('%Y-%m-%d')
 print(df)
+
+
+print('------ REMOVER UMA COLUNA ------')
+df.drop(columns=['email2'])

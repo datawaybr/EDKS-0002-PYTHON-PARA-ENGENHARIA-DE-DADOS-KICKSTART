@@ -2,8 +2,10 @@
 import requests
 
 url = "https://gorest.co.in/public/v2/users"
+
+#substitua pelo seu token e id
 token = "a99b738b1b43fdd579eb7a27f86caa6cb479457672377185e3817fa710f41d50"
-user_id = "5311906"
+user_id = "5362647"
 
 # POST /users
 # Cria um novo usuário

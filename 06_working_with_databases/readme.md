@@ -32,7 +32,7 @@ O banco de dados de exemplo Northwind foi fornecido com o Microsoft Access como 
 
 Northwind é um excelente esquema de tutorial para um ERP de pequenas empresas, com clientes, pedidos, estoque, compras, fornecedores, envio, funcionários e contabilidade de entrada única.
 
-![Schema](./databases/northwind-er-diagram.png)
+![Schema](./databases/postgres/northwind-er-diagram.png)
 
 ### Sqlite3 Version
 

@@ -17,3 +17,7 @@ numbers = [1, 2, 3, 4, 5]
 #     num ** 2
 comprehension_squared_numbers = [ num ** 2 for num in numbers ]
 print(f"resultado com comprehension: {comprehension_squared_numbers}")
+
+
+comprehension_squared_numbers = [ num ** 2 for num in numbers if (num % 2) == 0 ]
+print(f"resultado com comprehension: {comprehension_squared_numbers}")

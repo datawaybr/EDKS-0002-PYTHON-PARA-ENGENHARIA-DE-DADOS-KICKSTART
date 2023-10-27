@@ -1,9 +1,11 @@
+# !pip install pyyaml
+
 from pprint import pprint
 import yaml
 
 
 # Load YAML
-with open('file_1.yaml') as f:
+with open('file_1.yaml', 'r') as f:
     try:
         data = yaml.load(f, Loader=yaml.FullLoader)
         pprint(data)

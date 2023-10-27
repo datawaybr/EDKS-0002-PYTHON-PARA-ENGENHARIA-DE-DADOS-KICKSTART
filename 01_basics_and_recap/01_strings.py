@@ -1,21 +1,21 @@
 # Variáveis
 
 # string
-name = "Bob"
+nome = "Bob"
 # int
-age = 23
+idade = 23
 
 
 # str.format()
-string = "Hello, {}. You are {}.".format(name, age)
+frase_format = "Olá, meu nome é: {} e tenho {} anos".format(nome, idade)
 
 # f-strings
-string = f"Hello, {name}. You are {age}."
+frase_f_strings = f"Olá, meu nome é {nome} e tenho { idade } anos"
 
 long_string = f"""
     SELECT *
       FROM users
-     WHERE name = '{name}'
+     WHERE nome = '{nome}'
 """
 
 print(long_string)
