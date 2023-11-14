@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<root>
-    <name type="str">Lewis Hamilton</name>
-    <nationality type="str">British</nationality>
-    <team type="str">Mercedes</team>
-</root>

@@ -1,0 +1,21 @@
+{
+    "season": 2023,
+    "current": "yes",
+    "pilots": [
+        {
+            "name": "Lewis Hamilton",
+            "team": "Mercedes",
+            "nationality": "British"
+        },
+        {
+            "name": "Max Verstappen",
+            "team": "Red Bull Racing",
+            "nationality": "Dutch"
+        },
+        {
+            "name": "Charles Leclerc",
+            "team": "Ferrari",
+            "nationality": "Monégasque"
+        }
+    ]
+}

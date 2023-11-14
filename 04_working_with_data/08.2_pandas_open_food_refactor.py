@@ -3,8 +3,6 @@ import requests, logging
 
 from datetime import datetime as dt
 
-# pd.read_json(): Ler dados de arquivos JSON
-
 def extract_data_from_api(product:str):
     url = "https://world.openfoodfacts.net/api/v2/product/"
     full_url = url + product
@@ -39,10 +37,9 @@ def save_csv(data:dict):
 
 
 if __name__ == '__main__':
-
     product = '7891000369371'
+    
     response = extract_data_from_api(product)
-
     status_code = response.get('status_verbose')
     
     if status_code == 'product found':
@@ -50,9 +47,9 @@ if __name__ == '__main__':
 
         try:
             save_csv(df)
-            logging.warning(f"Successfully saved file: product_refactor.csv")
+            logging.warning(f"Successfully saved file: product.csv")
         except Exception as e:
-            logging.warning(f"Failed to save file: product_refactor.csv")
+            logging.warning(f"Failed to save file: product.csv")
             logging.warning(f"Error: {e}")
     else:
         logging.warning(f"status: {status_code}")

@@ -1,0 +1,11 @@
+dict:
+  bar: 50
+  foo: bar
+  key: value
+list:
+- 1
+- 42
+- 3.141
+- 1337
+- help
+string: bla

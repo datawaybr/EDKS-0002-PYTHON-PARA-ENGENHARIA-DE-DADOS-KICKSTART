@@ -1,16 +1,8 @@
-# pip install rocketry
-# pip install psutil
-# pydantic==1.10.10
-
 from rocketry import Rocketry
 from rocketry.conds import cron
 from datetime import datetime as dt
 
-import psutil
-import csv
-import os
-
-import logging
+import psutil, csv, os, logging
 
 app = Rocketry()
 
@@ -23,44 +15,46 @@ def get_cpu_usage():
     return cpu_usage
 
 def transform_data(ram: float, cpu: float):
-    logging.warning("Transforming data to list of dictionaries")
+    logging.warning("Transformando os dados de CPU e RAM")
 
     updated_at = dt.now().strftime("%Y-%m-%d %H:%M:%S")
 
     data = [
-        { "updated_at": updated_at, "cpu": cpu, "ram": ram }
+        { 'updated_at': updated_at, 'cpu': cpu , 'ram': ram }
     ]
 
     return data
 
 def save_data(data: dict):
-    file_path = './data/cpu_stats.csv'
+    file_path = './data/system_monitor.csv'
     file_exists = os.path.exists(file_path)
 
-    logging.warning(f"Saving data into { file_path }")
+    with open(file_path, 'a', encoding='UTF-8' ) as f:
+        columns = [ 'updated_at', 'cpu', 'ram' ]
 
-    with open(file_path, 'a', encoding='UTF8', newline='') as f:
-        field_names= ['updated_at', 'cpu', 'ram']
-
-        writer = csv.DictWriter(f, fieldnames=field_names)
+        writer = csv.DictWriter(f, fieldnames=columns)
 
         if not file_exists:
             writer.writeheader()
 
         writer.writerows(data)
 
+    return True
+
 @app.task(cron('* * * * *'))
 def task():
-    
     ram = get_ram_usage()
-    logging.warning(f"RAM usage: {ram}%")
-
     cpu = get_cpu_usage()
-    logging.warning(f"CPU usage: {cpu}%")
 
     system_usage = transform_data(ram, cpu)
 
     save_data(system_usage)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run()
+
+
+
+
+
+        
