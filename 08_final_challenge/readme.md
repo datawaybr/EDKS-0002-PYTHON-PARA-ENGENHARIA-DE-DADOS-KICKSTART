@@ -18,12 +18,12 @@ Nosso objetivo final será extrair dados de três API's
 2. API com metadado dos estados
     - Objetivo: para cada estado na lista anterior, vamos extrair a area do estado.
     - Atenção: crie um dicionário com a sigla do estado e a área do estado.
-    - `http://servicodados.ibge.gov.br/api/v3/malhas/estados/{UF}/metadados`
+    - Endpoint: `http://servicodados.ibge.gov.br/api/v3/malhas/estados/{UF}/metadados`
 
 3. API com lista de municipios por estado
     - Objetivo: para cada estado na lista, vamos extrair a lista de municipios.
     - Atenção: crie uma lista contendo o nome dos municipios.
-    - `https://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios`
+    - Endpoint: `http://servicodados.ibge.gov.br/api/v1/localidades/estados/{UF}/municipios`
 
 
 Vamos gerar ao final desse desafio, dois datasets (conjuntos de dados):
