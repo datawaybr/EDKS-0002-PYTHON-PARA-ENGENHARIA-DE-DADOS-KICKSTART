@@ -6,7 +6,7 @@
 
 Este repositório contém todos os códigos necessários para a realização da formação de Python para engenharia de dados - KICKSTART.
 
-Dentro de cada pasta, você encontrará um arquivo `readme.md` com as instruções para a realização das atividades.
+Dentro de cada pasta, caso exista um arquivo `readme.md`, favor com as instruções para a realização das atividades.
 
 ## Pré-Requisitos
 
