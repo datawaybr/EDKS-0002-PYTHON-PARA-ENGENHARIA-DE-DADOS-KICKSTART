@@ -13,5 +13,5 @@ Dentro de cada pasta, caso exista um arquivo `readme.md`, favor com as instru√ß√
 ### Docker
 
 ```
-docker run -it --rm -p 8888:8888 -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook:latest
+docker run -it -p 8888:8888 -v "${PWD}":/home/jovyan/work jupyter/datascience-notebook:latest
 ```
